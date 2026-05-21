@@ -1,21 +1,165 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Agenda</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Agenda public</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.19/index.global.min.js"></script>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    #calendar {
+      max-width: 1200px;
+      margin: auto;
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .fc-event-title {
+      font-weight: 600;
+    }
+
+    @media (max-width: 768px) {
+
+      body {
+        padding: 10px;
+      }
+
+      .fc-toolbar {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .fc-toolbar-title {
+        font-size: 1.2rem !important;
+      }
+    }
+  </style>
 </head>
+
 <body>
+
   <h1>Agenda public</h1>
 
-  <pre id="output"></pre>
+  <div id="calendar"></div>
 
   <script>
-    fetch('./events.json')
-      .then(r => r.json())
-      .then(data => {
-        document.getElementById('output').textContent =
-          JSON.stringify(data, null, 2)
+
+    document.addEventListener('DOMContentLoaded', async function () {
+
+      const response = await fetch('./events.json')
+      const events = await response.json()
+
+      console.log(events)
+
+      const calendarEl = document.getElementById('calendar')
+
+      const calendar = new FullCalendar.Calendar(calendarEl, {
+
+        initialView: 'dayGridMonth',
+
+        locale: 'fr',
+
+        height: 'auto',
+
+        firstDay: 1,
+
+        nowIndicator: true,
+
+        displayEventTime: true,
+
+        eventDisplay: 'block',
+
+        headerToolbar: {
+          left: 'prev,next today',
+          center: 'title',
+          right: 'dayGridMonth,timeGridWeek,listMonth'
+        },
+
+        buttonText: {
+          today: 'Aujourd’hui',
+          month: 'Mois',
+          week: 'Semaine',
+          list: 'Liste'
+        },
+
+        events: events,
+
+        eventTimeFormat: {
+          hour: '2-digit',
+          minute: '2-digit',
+          hour12: false
+        },
+
+        eventContent: function(arg) {
+
+          let location = arg.event.extendedProps.location || ''
+
+          return {
+            html: `
+              <div>
+                <strong>${arg.event.title}</strong>
+                <br>
+                <small>${location}</small>
+              </div>
+            `
+          }
+        },
+
+        eventClick: function(info) {
+
+          let details = `
+${info.event.title}
+
+Début : ${info.event.start.toLocaleString()}
+Fin : ${info.event.end.toLocaleString()}
+          `
+
+          if (info.event.extendedProps.location) {
+
+            details += `
+
+Lieu : ${info.event.extendedProps.location}`
+          }
+
+          alert(details)
+        }
+
       })
+
+      calendar.render()
+
+      // Vue liste automatique sur mobile
+      if (window.innerWidth < 768) {
+        calendar.changeView('listMonth')
+      }
+
+      // Refresh automatique toutes les 5 minutes
+      setInterval(() => {
+        location.reload()
+      }, 300000)
+
+    })
+
   </script>
+
 </body>
+
 </html>
