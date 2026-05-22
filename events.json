@@ -14,38 +14,31 @@
         "category":  "Bureau"
     },
     {
-        "title":  "Bureau executif",
-        "start":  "2026-06-24T09:00:00.0000000",
-        "end":  "2026-06-24T10:30:00.0000000",
+        "title":  "Commission developpement economique",
+        "start":  "2026-06-15T18:00:00.0000000",
+        "end":  "2026-06-15T19:30:00.0000000",
         "location":  "Grande salle du siege",
-        "category":  "Bureau"
+        "category":  "Commission"
     },
     {
-        "title":  "Bureau executif",
-        "start":  "2026-07-08T09:00:00.0000000",
-        "end":  "2026-07-08T10:30:00.0000000",
+        "title":  "Commission developpement durable",
+        "start":  "2026-06-17T18:00:00.0000000",
+        "end":  "2026-06-17T19:30:00.0000000",
         "location":  "Grande salle du siege",
-        "category":  "Bureau"
+        "category":  "Commission"
     },
     {
-        "title":  "Bureau executif",
-        "start":  "2026-07-22T09:00:00.0000000",
-        "end":  "2026-07-22T10:30:00.0000000",
+        "title":  "Bureau communautaire",
+        "start":  "2026-06-25T18:00:00.0000000",
+        "end":  "2026-06-25T20:00:00.0000000",
         "location":  "Grande salle du siege",
-        "category":  "Bureau"
+        "category":  "Bureauc"
     },
     {
-        "title":  "Bureau executif",
-        "start":  "2026-08-05T09:00:00.0000000",
-        "end":  "2026-08-05T10:30:00.0000000",
-        "location":  "Grande salle du siege",
-        "category":  "Bureau"
-    },
-    {
-        "title":  "Bureau executif",
-        "start":  "2026-08-19T09:00:00.0000000",
-        "end":  "2026-08-19T10:30:00.0000000",
-        "location":  "Grande salle du siege",
-        "category":  "Bureau"
+        "title":  "Conseil communautaire",
+        "start":  "2026-07-07T18:00:00.0000000",
+        "end":  "2026-07-07T20:00:00.0000000",
+        "location":  "Maison de la musique",
+        "category":  "Conseil"
     }
 ]
