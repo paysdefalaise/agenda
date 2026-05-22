@@ -1,137 +1,139 @@
-document.addEventListener('DOMContentLoaded', async function () {
+document.addEventListener("DOMContentLoaded", async function () {
+  const lastUpdateEl = document.getElementById("last-update");
+  const calendarEl = document.getElementById("calendar");
 
-  const response = await fetch(
-    './events.json?t=' + new Date().getTime()
-  )
+  let events = [];
 
-  const data = await response.json()
+  try {
+    const response = await fetch("./events.json?t=" + new Date().getTime());
 
-  const events = data.events
+    if (!response.ok) {
+      throw new Error(`HTTP ${response.status}`);
+    }
 
-  document.getElementById('last-update').textContent =
-    new Date(data.generatedAt).toLocaleString('fr-FR')
+    const data = await response.json();
 
-  const calendarEl = document.getElementById('calendar')
+    events = Array.isArray(data.events) ? data.events : [];
 
-  const categoryColors = {
-
-    "y": "#005c7e",
-
-    "Conseil": "#9c27b0",
-
-    "Commission": "#f44336",
-
-    "x": "#00bcd4",
-
-    "Bureauc": "#8bc34a",
-
-    "Bureau": "#ff9800"
+    lastUpdateEl.textContent = new Date(data.generatedAt).toLocaleString(
+      "fr-FR",
+    );
+  } catch (error) {
+    console.error("Impossible de charger events.json", error);
+    lastUpdateEl.textContent = "indisponible";
+    calendarEl.innerHTML =
+      '<p class="calendar-error">Impossible de charger les evenements.</p>';
+    return;
   }
 
+  const categoryColors = {
+    y: "#005c7e",
+
+    Conseil: "#9c27b0",
+
+    Commission: "#f44336",
+
+    x: "#00bcd4",
+
+    Bureauc: "#8bc34a",
+
+    Bureau: "#ff9800",
+  };
+
   const calendar = new FullCalendar.Calendar(calendarEl, {
+    initialView: window.innerWidth < 768 ? "listMonth" : "dayGridMonth",
 
-    initialView: window.innerWidth < 768
-      ? 'listMonth'
-      : 'dayGridMonth',
-
-    locale: 'fr',
+    locale: "fr",
 
     firstDay: 1,
 
-    height: 'auto',
+    height: "auto",
 
     nowIndicator: true,
 
     displayEventTime: true,
 
-    eventDisplay: 'block',
+    eventDisplay: "block",
 
     headerToolbar: {
-      left: 'prev,next today',
-      center: 'title',
-      right: 'dayGridMonth,timeGridWeek,listMonth'
+      left: "prev,next today",
+      center: "title",
+      right: "dayGridMonth,timeGridWeek,listMonth",
     },
 
     buttonText: {
-      today: 'Aujourd’hui',
-      month: 'Mois',
-      week: 'Semaine',
-      list: 'Liste'
+      today: "Aujourd’hui",
+      month: "Mois",
+      week: "Semaine",
+      list: "Liste",
     },
 
     events: events,
 
     eventTimeFormat: {
-      hour: '2-digit',
-      minute: '2-digit',
-      hour12: false
+      hour: "2-digit",
+      minute: "2-digit",
+      hour12: false,
     },
 
-    eventDidMount: function(info) {
+    eventDidMount: function (info) {
+      const category = info.event.extendedProps.category;
 
-      const category =
-        info.event.extendedProps.category
+      const color = categoryColors[category] || "#00bcd4";
 
-      const color =
-        categoryColors[category] || "#00bcd4"
-
-      info.el.style.backgroundColor = color
+      info.el.style.backgroundColor = color;
     },
 
-    eventContent: function(arg) {
+    eventContent: function (arg) {
+      const location = arg.event.extendedProps.location || "";
 
-      const location =
-        arg.event.extendedProps.location || ''
+      const time = arg.timeText || "";
 
-      const time =
-        arg.timeText || ''
+      const wrapper = document.createElement("div");
+      wrapper.className = "event-content";
 
-      return {
-        html: `
-          <div class="event-content">
+      const timeEl = document.createElement("div");
+      timeEl.className = "event-time";
+      timeEl.textContent = time;
 
-            <div class="event-time">
-              ${time}
-            </div>
+      const titleEl = document.createElement("div");
+      titleEl.className = "event-title";
+      titleEl.textContent = arg.event.title;
 
-            <div class="event-title">
-              ${arg.event.title}
-            </div>
+      wrapper.append(timeEl, titleEl);
 
-            <div class="event-location">
-              ${location}
-            </div>
+      if (location) {
+        const locationEl = document.createElement("div");
+        locationEl.className = "event-location";
+        locationEl.textContent = location;
 
-          </div>
-        `
+        wrapper.append(locationEl);
       }
+
+      return { domNodes: [wrapper] };
     },
 
-    eventClick: function(info) {
-
+    eventClick: function (info) {
       let details = `
 ${info.event.title}
 
-Début : ${info.event.start.toLocaleString()}
-Fin : ${info.event.end.toLocaleString()}
-      `
+Début : ${info.event.start.toLocaleString("fr-FR")}
+Fin : ${info.event.end.toLocaleString("fr-FR")}
+      `;
 
       if (info.event.extendedProps.location) {
-
         details += `
 
-Lieu : ${info.event.extendedProps.location}`
+Lieu : ${info.event.extendedProps.location}`;
       }
 
-      alert(details)
-    }
+      alert(details);
+    },
+  });
 
-  })
-
-  calendar.render()
+  calendar.render();
 
   setInterval(() => {
-    location.reload()
-  }, 300000)
-
-})
+    location.reload();
+  }, 300000);
+});

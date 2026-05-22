@@ -1,3 +1,12 @@
+:root {
+  --brand: #005c7e;
+  --brand-dark: #00445f;
+  --brand-deeper: #00354a;
+  --surface: #ffffff;
+  --text: #333333;
+  --muted: #666666;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -6,7 +15,7 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: #f5f7fa;
-  color: #333;
+  color: var(--text);
 }
 
 /* HEADER */
@@ -16,8 +25,8 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px 30px;
-  background: white;
-  border-bottom: 4px solid #005c7e;
+  background: var(--surface);
+  border-bottom: 4px solid var(--brand);
 }
 
 .logo {
@@ -30,13 +39,13 @@ body {
 
 .header-right h1 {
   margin: 0;
-  color: #005c7e;
+  color: var(--brand);
   font-size: 2.2rem;
 }
 
 .header-right p {
   margin-top: 10px;
-  color: #666;
+  color: var(--muted);
   line-height: 1.5;
 }
 
@@ -49,10 +58,19 @@ body {
 /* CALENDAR */
 
 #calendar {
-  background: white;
+  background: var(--surface);
   border-radius: 12px;
   padding: 15px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.calendar-error {
+  margin: 0;
+  padding: 16px;
+  color: #8a1f11;
+  background: #fdecea;
+  border: 1px solid #f5c2c7;
+  border-radius: 8px;
 }
 
 /* FULLCALENDAR */
@@ -63,20 +81,20 @@ body {
 
 .fc-toolbar-title {
   font-weight: 600;
-  color: #005c7e;
+  color: var(--brand);
 }
 
 .fc-button {
-  background-color: #005c7e !important;
-  border-color: #005c7e !important;
+  background-color: var(--brand) !important;
+  border-color: var(--brand) !important;
 }
 
 .fc-button:hover {
-  background-color: #00445f !important;
+  background-color: var(--brand-dark) !important;
 }
 
 .fc-button-active {
-  background-color: #00354a !important;
+  background-color: var(--brand-deeper) !important;
 }
 
 .fc-event {
@@ -100,8 +118,8 @@ body {
 
 .footer {
   margin-top: 30px;
-  background: #005c7e;
-  color: white;
+  background: var(--brand);
+  color: var(--surface);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -128,21 +146,43 @@ body {
 /* MOBILE */
 
 @media (max-width: 768px) {
+  .container {
+    padding: 12px;
+  }
 
   .header {
     flex-direction: column;
     text-align: center;
     gap: 20px;
+    padding: 16px 16px;
+  }
+
+  .logo {
+    height: 96px;
   }
 
   .header-right {
     text-align: center;
   }
 
+  .header-right h1 {
+    font-size: 1.8rem;
+  }
+
+  #calendar {
+    padding: 10px;
+    border-radius: 10px;
+  }
+
   .footer {
     flex-direction: column;
     gap: 20px;
     text-align: center;
+    padding: 16px 16px;
+  }
+
+  .footer-logo {
+    height: 56px;
   }
 
   .footer-right {
@@ -155,4 +195,17 @@ body {
     gap: 10px;
   }
 
+  .fc .fc-toolbar-title {
+    font-size: 1.2rem;
+  }
+
+  .fc .fc-toolbar-chunk {
+    display: flex;
+    justify-content: center;
+  }
+
+  .fc-event {
+    font-size: 0.85rem;
+    padding: 5px;
+  }
 }
