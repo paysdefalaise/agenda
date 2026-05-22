@@ -2,5 +2,6 @@
     "title":  "Conseil Communautaire",
     "start":  "2026-06-04T18:00:00.0000000",
     "end":  "2026-06-04T20:00:00.0000000",
-    "location":  "Maison de la musique"
+    "location":  "Maison de la musique",
+    "category": "Conseil"
 }]

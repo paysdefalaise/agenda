@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f7fa;
+  color: #333;
+}
+
+/* HEADER */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  background: white;
+  border-bottom: 4px solid #005c7e;
+}
+
+.logo {
+  height: 120px;
+}
+
+.header-right {
+  text-align: right;
+}
+
+.header-right h1 {
+  margin: 0;
+  color: #005c7e;
+  font-size: 2.2rem;
+}
+
+.header-right p {
+  margin-top: 10px;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* CONTAINER */
+
+.container {
+  padding: 20px;
+}
+
+/* CALENDAR */
+
+#calendar {
+  background: white;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+/* FULLCALENDAR */
+
+.event-title {
+  font-weight: 700;
+}
+
+.fc-toolbar-title {
+  font-weight: 600;
+  color: #005c7e;
+}
+
+.fc-button {
+  background-color: #005c7e !important;
+  border-color: #005c7e !important;
+}
+
+.fc-button:hover {
+  background-color: #00445f !important;
+}
+
+.fc-button-active {
+  background-color: #00354a !important;
+}
+
+.fc-event {
+  border: none;
+  border-radius: 8px;
+  padding: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.fc-event-title {
+  font-weight: bold;
+}
+
+.fc-event-time {
+  font-size: 0.8rem;
+  opacity: 0.9;
+}
+
+/* FOOTER */
+
+.footer {
+  margin-top: 30px;
+  background: #005c7e;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+}
+
+.footer-logo {
+  height: 70px;
+}
+
+.footer-center h3 {
+  margin: 0 0 10px 0;
+}
+
+.footer-center p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.footer-right {
+  text-align: right;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .header {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .header-right {
+    text-align: center;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .footer-right {
+    text-align: center;
+  }
+
+  .fc-toolbar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+}
