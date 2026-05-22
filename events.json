@@ -40,5 +40,40 @@
         "end":  "2026-07-07T20:00:00.0000000",
         "location":  "Maison de la musique",
         "category":  "Conseil"
+    },
+    {
+        "title":  "Commission finances",
+        "start":  "2026-09-15T18:00:00.0000000",
+        "end":  "2026-09-15T19:30:00.0000000",
+        "location":  "Grande salle du siege",
+        "category":  "Commission"
+    },
+    {
+        "title":  "Bureau communautaire",
+        "start":  "2026-09-17T18:00:00.0000000",
+        "end":  "2026-09-17T20:00:00.0000000",
+        "location":  "Grande salle du siege",
+        "category":  "Bureauc"
+    },
+    {
+        "title":  "Conseil communautaire",
+        "start":  "2026-10-01T18:00:00.0000000",
+        "end":  "2026-10-01T20:00:00.0000000",
+        "location":  "Maison de la musique",
+        "category":  "Conseil"
+    },
+    {
+        "title":  "Bureau communautaire",
+        "start":  "2026-10-29T18:00:00.0000000",
+        "end":  "2026-10-29T20:00:00.0000000",
+        "location":  "Grande salle du siege",
+        "category":  "Bureauc"
+    },
+    {
+        "title":  "Conseil communautaire",
+        "start":  "2026-11-12T18:00:00.0000000",
+        "end":  "2026-11-12T20:00:00.0000000",
+        "location":  "Maison de la musique",
+        "category":  "Conseil"
     }
 ]
