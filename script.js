@@ -9,11 +9,11 @@ document.addEventListener('DOMContentLoaded', async function () {
   const calendarEl = document.getElementById('calendar')
 
       const categoryColors = {
-        "Bureau": "#005c7e",
+        "y": "#005c7e",
         "x": "#00bcd4",
         "Conseil": "#9c27b0",
         "Commission": "#f44336",
-        "y": "#ff9800",
+        "Bureau": "#ff9800",
         "z": "#8bc34a"
     }
 
@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         info.event.extendedProps.category
 
     const color =
-        categoryColors[category] || "#ff9800"
+        categoryColors[category] || "#00bcd4"
 
     info.el.style.backgroundColor = color
     },
