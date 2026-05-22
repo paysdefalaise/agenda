@@ -1,8 +1,62 @@
 document.addEventListener("DOMContentLoaded", async function () {
   const lastUpdateEl = document.getElementById("last-update");
   const calendarEl = document.getElementById("calendar");
+  const modalEl = document.getElementById("event-modal");
+  const modalTitleEl = document.getElementById("modal-event-title");
+  const modalStartEl = document.getElementById("modal-event-start");
+  const modalEndEl = document.getElementById("modal-event-end");
+  const modalLocationRowEl = document.getElementById(
+    "modal-event-location-row",
+  );
+  const modalLocationEl = document.getElementById("modal-event-location");
+  const modalCloseTargets = modalEl.querySelectorAll("[data-modal-close]");
 
   let events = [];
+  let lastFocusedElement = null;
+
+  function closeEventModal() {
+    modalEl.classList.add("is-hidden");
+    modalEl.setAttribute("aria-hidden", "true");
+    document.body.classList.remove("modal-open");
+
+    if (lastFocusedElement && typeof lastFocusedElement.focus === "function") {
+      lastFocusedElement.focus();
+    }
+  }
+
+  function openEventModal(event) {
+    lastFocusedElement = document.activeElement;
+
+    modalTitleEl.textContent = event.title;
+    modalStartEl.textContent = event.start.toLocaleString("fr-FR");
+    modalEndEl.textContent = event.end.toLocaleString("fr-FR");
+
+    const location = event.extendedProps.location || "";
+
+    if (location) {
+      modalLocationEl.textContent = location;
+      modalLocationRowEl.style.display = "grid";
+    } else {
+      modalLocationEl.textContent = "";
+      modalLocationRowEl.style.display = "none";
+    }
+
+    modalEl.classList.remove("is-hidden");
+    modalEl.setAttribute("aria-hidden", "false");
+    document.body.classList.add("modal-open");
+
+    modalEl.querySelector(".modal-close").focus();
+  }
+
+  modalCloseTargets.forEach((element) => {
+    element.addEventListener("click", closeEventModal);
+  });
+
+  modalEl.addEventListener("keydown", function (event) {
+    if (event.key === "Escape") {
+      closeEventModal();
+    }
+  });
 
   try {
     const response = await fetch("./events.json?t=" + new Date().getTime());
@@ -41,7 +95,7 @@ document.addEventListener("DOMContentLoaded", async function () {
   };
 
   const calendar = new FullCalendar.Calendar(calendarEl, {
-    initialView: window.innerWidth < 768 ? "listMonth" : "dayGridMonth",
+    initialView: "dayGridMonth",
 
     locale: "fr",
 
@@ -114,20 +168,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     },
 
     eventClick: function (info) {
-      let details = `
-${info.event.title}
-
-Début : ${info.event.start.toLocaleString("fr-FR")}
-Fin : ${info.event.end.toLocaleString("fr-FR")}
-      `;
-
-      if (info.event.extendedProps.location) {
-        details += `
-
-Lieu : ${info.event.extendedProps.location}`;
-      }
-
-      alert(details);
+      openEventModal(info.event);
     },
   });
 

@@ -7,7 +7,11 @@
 
   <title>Agenda communautaire</title>
 
-  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.19/index.global.min.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.19/index.global.min.js"
+    integrity="sha384-LjuMvep2w70bTtVscyL+xkqhYr7Y0kTM4t5cwWMy0xOTfl5duHb7MnP6K3J3/4Mk"
+    crossorigin="anonymous"
+  ></script>
 
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -33,6 +37,42 @@
   <main class="container">
     <div id="calendar"></div>
   </main>
+
+  <div id="event-modal" class="modal is-hidden" aria-hidden="true">
+    <div class="modal-backdrop" data-modal-close></div>
+
+    <div
+      class="modal-dialog"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="event-modal-title"
+    >
+      <button type="button" class="modal-close" data-modal-close aria-label="Fermer la fenêtre">
+        ×
+      </button>
+
+      <h2 id="event-modal-title">Détails de l'événement</h2>
+
+      <dl class="modal-details">
+        <div>
+          <dt>Titre</dt>
+          <dd id="modal-event-title"></dd>
+        </div>
+        <div>
+          <dt>Début</dt>
+          <dd id="modal-event-start"></dd>
+        </div>
+        <div>
+          <dt>Fin</dt>
+          <dd id="modal-event-end"></dd>
+        </div>
+        <div id="modal-event-location-row">
+          <dt>Lieu</dt>
+          <dd id="modal-event-location"></dd>
+        </div>
+      </dl>
+    </div>
+  </div>
 
   <footer class="footer">
 
