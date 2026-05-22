@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', async function () {
 
-  const response = await fetch('./events.json')
+  const response = await fetch(
+    './events.json?t=' + new Date().getTime()
+  )
   const events = await response.json()
 
   document.getElementById('last-update').textContent =
@@ -14,7 +16,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         "Conseil": "#9c27b0",
         "Commission": "#f44336",
         "Bureau": "#ff9800",
-        "z": "#8bc34a"
+        "Bureauc": "#8bc34a"
     }
 
   const calendar = new FullCalendar.Calendar(calendarEl, {
