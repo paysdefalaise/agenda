@@ -3,21 +3,30 @@ document.addEventListener('DOMContentLoaded', async function () {
   const response = await fetch(
     './events.json?t=' + new Date().getTime()
   )
-  const events = await response.json()
+
+  const data = await response.json()
+
+  const events = data.events
 
   document.getElementById('last-update').textContent =
-    new Date().toLocaleString('fr-FR')
+    new Date(data.generatedAt).toLocaleString('fr-FR')
 
   const calendarEl = document.getElementById('calendar')
 
-      const categoryColors = {
-        "y": "#005c7e",
-        "x": "#00bcd4",
-        "Conseil": "#9c27b0",
-        "Commission": "#f44336",
-        "Bureau": "#ff9800",
-        "Bureauc": "#8bc34a"
-    }
+  const categoryColors = {
+
+    "y": "#005c7e",
+
+    "Conseil": "#9c27b0",
+
+    "Commission": "#f44336",
+
+    "x": "#00bcd4",
+
+    "Bureauc": "#8bc34a",
+
+    "Bureau": "#ff9800"
+  }
 
   const calendar = new FullCalendar.Calendar(calendarEl, {
 
@@ -60,13 +69,13 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     eventDidMount: function(info) {
 
-    const category =
+      const category =
         info.event.extendedProps.category
 
-    const color =
+      const color =
         categoryColors[category] || "#00bcd4"
 
-    info.el.style.backgroundColor = color
+      info.el.style.backgroundColor = color
     },
 
     eventContent: function(arg) {
@@ -80,13 +89,19 @@ document.addEventListener('DOMContentLoaded', async function () {
       return {
         html: `
           <div class="event-content">
-            <div class="event-time">${time}</div>
+
+            <div class="event-time">
+              ${time}
+            </div>
+
             <div class="event-title">
               ${arg.event.title}
             </div>
+
             <div class="event-location">
               ${location}
             </div>
+
           </div>
         `
       }
@@ -115,7 +130,6 @@ Lieu : ${info.event.extendedProps.location}`
 
   calendar.render()
 
-  // Refresh auto toutes les 5 minutes
   setInterval(() => {
     location.reload()
   }, 300000)
