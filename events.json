@@ -35,6 +35,13 @@
         "category":  "Bureauc"
     },
     {
+        "title":  "Commission assainissement",
+        "start":  "2026-06-30T18:00:00.0000000",
+        "end":  "2026-06-30T19:30:00.0000000",
+        "location":  "Grande salle du siege",
+        "category":  "Commission"
+    },
+    {
         "title":  "Conseil communautaire",
         "start":  "2026-07-07T18:00:00.0000000",
         "end":  "2026-07-07T20:00:00.0000000",
