@@ -1,86 +1,101 @@
-[
-    {
-        "title":  "Conseil Communautaire",
-        "start":  "2026-06-04T18:00:00.0000000",
-        "end":  "2026-06-04T20:00:00.0000000",
-        "location":  "Maison de la musique",
-        "category":  "Conseil"
-    },
-    {
-        "title":  "Bureau executif",
-        "start":  "2026-06-10T09:00:00.0000000",
-        "end":  "2026-06-10T10:30:00.0000000",
-        "location":  "Grande salle du siege",
-        "category":  "Bureau"
-    },
-    {
-        "title":  "Commission developpement economique",
-        "start":  "2026-06-15T18:00:00.0000000",
-        "end":  "2026-06-15T19:30:00.0000000",
-        "location":  "Grande salle du siege",
-        "category":  "Commission"
-    },
-    {
-        "title":  "Commission developpement durable",
-        "start":  "2026-06-17T18:00:00.0000000",
-        "end":  "2026-06-17T19:30:00.0000000",
-        "location":  "Grande salle du siege",
-        "category":  "Commission"
-    },
-    {
-        "title":  "Bureau communautaire",
-        "start":  "2026-06-25T18:00:00.0000000",
-        "end":  "2026-06-25T20:00:00.0000000",
-        "location":  "Grande salle du siege",
-        "category":  "Bureauc"
-    },
-    {
-        "title":  "Commission assainissement",
-        "start":  "2026-06-30T18:00:00.0000000",
-        "end":  "2026-06-30T19:30:00.0000000",
-        "location":  "Grande salle du siege",
-        "category":  "Commission"
-    },
-    {
-        "title":  "Conseil communautaire",
-        "start":  "2026-07-07T18:00:00.0000000",
-        "end":  "2026-07-07T20:00:00.0000000",
-        "location":  "Maison de la musique",
-        "category":  "Conseil"
-    },
-    {
-        "title":  "Commission finances",
-        "start":  "2026-09-15T18:00:00.0000000",
-        "end":  "2026-09-15T19:30:00.0000000",
-        "location":  "Grande salle du siege",
-        "category":  "Commission"
-    },
-    {
-        "title":  "Bureau communautaire",
-        "start":  "2026-09-17T18:00:00.0000000",
-        "end":  "2026-09-17T20:00:00.0000000",
-        "location":  "Grande salle du siege",
-        "category":  "Bureauc"
-    },
-    {
-        "title":  "Conseil communautaire",
-        "start":  "2026-10-01T18:00:00.0000000",
-        "end":  "2026-10-01T20:00:00.0000000",
-        "location":  "Maison de la musique",
-        "category":  "Conseil"
-    },
-    {
-        "title":  "Bureau communautaire",
-        "start":  "2026-10-29T18:00:00.0000000",
-        "end":  "2026-10-29T20:00:00.0000000",
-        "location":  "Grande salle du siege",
-        "category":  "Bureauc"
-    },
-    {
-        "title":  "Conseil communautaire",
-        "start":  "2026-11-12T18:00:00.0000000",
-        "end":  "2026-11-12T20:00:00.0000000",
-        "location":  "Maison de la musique",
-        "category":  "Conseil"
-    }
-]
+{
+    "events":  [
+                   {
+                       "title":  "Conseil Communautaire",
+                       "start":  "2026-06-04T18:00:00.0000000",
+                       "end":  "2026-06-04T20:00:00.0000000",
+                       "location":  "Maison de la musique",
+                       "category":  "Conseil",
+                       "allDay":  false
+                   },
+                   {
+                       "title":  "Bureau executif",
+                       "start":  "2026-06-10T09:00:00.0000000",
+                       "end":  "2026-06-10T10:30:00.0000000",
+                       "location":  "Grande salle du siege",
+                       "category":  "Bureau",
+                       "allDay":  false
+                   },
+                   {
+                       "title":  "Commission developpement economique",
+                       "start":  "2026-06-15T18:00:00.0000000",
+                       "end":  "2026-06-15T19:30:00.0000000",
+                       "location":  "Grande salle du siege",
+                       "category":  "Commission",
+                       "allDay":  false
+                   },
+                   {
+                       "title":  "Commission developpement durable",
+                       "start":  "2026-06-17T18:00:00.0000000",
+                       "end":  "2026-06-17T19:30:00.0000000",
+                       "location":  "Grande salle du siege",
+                       "category":  "Commission",
+                       "allDay":  false
+                   },
+                   {
+                       "title":  "Bureau communautaire",
+                       "start":  "2026-06-25T18:00:00.0000000",
+                       "end":  "2026-06-25T20:00:00.0000000",
+                       "location":  "Grande salle du siege",
+                       "category":  "Bureauc",
+                       "allDay":  false
+                   },
+                   {
+                       "title":  "Commission assainissement",
+                       "start":  "2026-06-30T18:00:00.0000000",
+                       "end":  "2026-06-30T19:30:00.0000000",
+                       "location":  "Grande salle du siege",
+                       "category":  "Commission",
+                       "allDay":  false
+                   },
+                   {
+                       "title":  "Conseil communautaire",
+                       "start":  "2026-07-07T18:00:00.0000000",
+                       "end":  "2026-07-07T20:00:00.0000000",
+                       "location":  "Maison de la musique",
+                       "category":  "Conseil",
+                       "allDay":  false
+                   },
+                   {
+                       "title":  "Commission finances",
+                       "start":  "2026-09-15T18:00:00.0000000",
+                       "end":  "2026-09-15T19:30:00.0000000",
+                       "location":  "Grande salle du siege",
+                       "category":  "Commission",
+                       "allDay":  false
+                   },
+                   {
+                       "title":  "Bureau communautaire",
+                       "start":  "2026-09-17T18:00:00.0000000",
+                       "end":  "2026-09-17T20:00:00.0000000",
+                       "location":  "Grande salle du siege",
+                       "category":  "Bureauc",
+                       "allDay":  false
+                   },
+                   {
+                       "title":  "Conseil communautaire",
+                       "start":  "2026-10-01T18:00:00.0000000",
+                       "end":  "2026-10-01T20:00:00.0000000",
+                       "location":  "Maison de la musique",
+                       "category":  "Conseil",
+                       "allDay":  false
+                   },
+                   {
+                       "title":  "Bureau communautaire",
+                       "start":  "2026-10-29T18:00:00.0000000",
+                       "end":  "2026-10-29T20:00:00.0000000",
+                       "location":  "Grande salle du siege",
+                       "category":  "Bureauc",
+                       "allDay":  false
+                   },
+                   {
+                       "title":  "Conseil communautaire",
+                       "start":  "2026-11-12T18:00:00.0000000",
+                       "end":  "2026-11-12T20:00:00.0000000",
+                       "location":  "Maison de la musique",
+                       "category":  "Conseil",
+                       "allDay":  false
+                   }
+               ],
+    "generatedAt":  "2026-05-22T15:40:29.5694524+02:00"
+}
