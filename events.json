@@ -4,13 +4,48 @@
         "start":  "2026-06-04T18:00:00.0000000",
         "end":  "2026-06-04T20:00:00.0000000",
         "location":  "Maison de la musique",
-        "category":  "Conseil; Bureau"
+        "category":  "Conseil"
     },
     {
-        "title":  "Bureau exécutif",
+        "title":  "Bureau executif",
         "start":  "2026-06-10T09:00:00.0000000",
         "end":  "2026-06-10T10:30:00.0000000",
-        "location":  "Grande salle du siège",
+        "location":  "Grande salle du siege",
+        "category":  "Bureau"
+    },
+    {
+        "title":  "Bureau executif",
+        "start":  "2026-06-24T09:00:00.0000000",
+        "end":  "2026-06-24T10:30:00.0000000",
+        "location":  "Grande salle du siege",
+        "category":  "Bureau"
+    },
+    {
+        "title":  "Bureau executif",
+        "start":  "2026-07-08T09:00:00.0000000",
+        "end":  "2026-07-08T10:30:00.0000000",
+        "location":  "Grande salle du siege",
+        "category":  "Bureau"
+    },
+    {
+        "title":  "Bureau executif",
+        "start":  "2026-07-22T09:00:00.0000000",
+        "end":  "2026-07-22T10:30:00.0000000",
+        "location":  "Grande salle du siege",
+        "category":  "Bureau"
+    },
+    {
+        "title":  "Bureau executif",
+        "start":  "2026-08-05T09:00:00.0000000",
+        "end":  "2026-08-05T10:30:00.0000000",
+        "location":  "Grande salle du siege",
+        "category":  "Bureau"
+    },
+    {
+        "title":  "Bureau executif",
+        "start":  "2026-08-19T09:00:00.0000000",
+        "end":  "2026-08-19T10:30:00.0000000",
+        "location":  "Grande salle du siege",
         "category":  "Bureau"
     }
 ]
