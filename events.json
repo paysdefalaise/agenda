@@ -97,6 +97,14 @@
                        "allDay":  false
                    },
                    {
+                       "title":  "Commission culture",
+                       "start":  "2026-09-22T17:45:00.0000000",
+                       "end":  "2026-09-22T19:45:00.0000000",
+                       "location":  "Grande salle du siege",
+                       "category":  "Commission",
+                       "allDay":  false
+                   },
+                   {
                        "title":  "Conseil communautaire",
                        "start":  "2026-10-01T18:00:00.0000000",
                        "end":  "2026-10-01T20:00:00.0000000",
@@ -119,7 +127,15 @@
                        "location":  "Maison de la musique",
                        "category":  "Conseil",
                        "allDay":  false
+                   },
+                   {
+                       "title":  "Bureau communautaire",
+                       "start":  "2026-12-03T18:00:00.0000000",
+                       "end":  "2026-12-03T20:00:00.0000000",
+                       "location":  "Grande salle du siege",
+                       "category":  "Bureauc",
+                       "allDay":  false
                    }
                ],
-    "generatedAt":  "2026-05-28T15:12:15.4657719+02:00"
+    "generatedAt":  "2026-06-04T08:12:47.2342654+02:00"
 }
