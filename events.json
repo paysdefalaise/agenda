@@ -1,22 +1,6 @@
 {
     "events":  [
                    {
-                       "title":  "Conseil Communautaire",
-                       "start":  "2026-06-04T18:00:00.0000000",
-                       "end":  "2026-06-04T20:00:00.0000000",
-                       "location":  "Maison de la musique",
-                       "category":  "Conseil",
-                       "allDay":  false
-                   },
-                   {
-                       "title":  "Bureau executif",
-                       "start":  "2026-06-10T09:00:00.0000000",
-                       "end":  "2026-06-10T10:30:00.0000000",
-                       "location":  "Grande salle du siege",
-                       "category":  "Bureau",
-                       "allDay":  false
-                   },
-                   {
                        "title":  "Commission developpement economique",
                        "start":  "2026-06-15T18:00:00.0000000",
                        "end":  "2026-06-15T19:30:00.0000000",
@@ -49,6 +33,14 @@
                        "allDay":  false
                    },
                    {
+                       "title":  "Bureau executif",
+                       "start":  "2026-06-24T09:00:00.0000000",
+                       "end":  "2026-06-24T10:30:00.0000000",
+                       "location":  "Grande salle du siege",
+                       "category":  "",
+                       "allDay":  false
+                   },
+                   {
                        "title":  "Bureau communautaire",
                        "start":  "2026-06-25T18:00:00.0000000",
                        "end":  "2026-06-25T20:00:00.0000000",
@@ -68,6 +60,22 @@
                        "title":  "Commission amenagement espace",
                        "start":  "2026-07-01T18:00:00.0000000",
                        "end":  "2026-07-01T19:30:00.0000000",
+                       "location":  "Grande salle du siege",
+                       "category":  "Commission",
+                       "allDay":  false
+                   },
+                   {
+                       "title":  "Commission attractivite",
+                       "start":  "2026-07-02T18:00:00.0000000",
+                       "end":  "2026-07-02T19:30:00.0000000",
+                       "location":  "Grande salle du siege",
+                       "category":  "Commission",
+                       "allDay":  false
+                   },
+                   {
+                       "title":  "Commission accompagnement communes",
+                       "start":  "2026-07-03T18:00:00.0000000",
+                       "end":  "2026-07-03T19:30:00.0000000",
                        "location":  "Grande salle du siege",
                        "category":  "Commission",
                        "allDay":  false
@@ -137,5 +145,5 @@
                        "allDay":  false
                    }
                ],
-    "generatedAt":  "2026-06-04T08:12:47.2342654+02:00"
+    "generatedAt":  "2026-06-10T14:33:11.5375519+02:00"
 }
