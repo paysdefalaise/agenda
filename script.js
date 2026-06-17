@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", async function () {
   }
 
   const categoryColors = {
-    y: "#005c7e",
+    Evenement: "#005c7e",
 
     Conseil: "#9c27b0",
 
