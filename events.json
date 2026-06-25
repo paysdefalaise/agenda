@@ -1,46 +1,6 @@
 {
     "events":  [
                    {
-                       "title":  "Commission developpement durable",
-                       "start":  "2026-06-17T18:00:00.0000000",
-                       "end":  "2026-06-17T19:30:00.0000000",
-                       "location":  "Grande salle du siege",
-                       "category":  "Commission",
-                       "allDay":  false
-                   },
-                   {
-                       "title":  "Commission cadre de vie",
-                       "start":  "2026-06-22T18:00:00.0000000",
-                       "end":  "2026-06-22T19:30:00.0000000",
-                       "location":  "Grande salle du siege",
-                       "category":  "Commission",
-                       "allDay":  false
-                   },
-                   {
-                       "title":  "Commission environnement",
-                       "start":  "2026-06-23T18:00:00.0000000",
-                       "end":  "2026-06-23T19:30:00.0000000",
-                       "location":  "Grande salle du siege",
-                       "category":  "Commission",
-                       "allDay":  false
-                   },
-                   {
-                       "title":  "Bureau executif",
-                       "start":  "2026-06-24T09:00:00.0000000",
-                       "end":  "2026-06-24T10:30:00.0000000",
-                       "location":  "Grande salle du siege",
-                       "category":  "Bureau",
-                       "allDay":  false
-                   },
-                   {
-                       "title":  "Bureau communautaire",
-                       "start":  "2026-06-25T18:00:00.0000000",
-                       "end":  "2026-06-25T20:00:00.0000000",
-                       "location":  "Grande salle du siege",
-                       "category":  "Bureauc",
-                       "allDay":  false
-                   },
-                   {
                        "title":  "Commission assainissement",
                        "start":  "2026-06-30T18:00:00.0000000",
                        "end":  "2026-06-30T19:30:00.0000000",
@@ -159,7 +119,15 @@
                        "location":  "Grande salle du siege",
                        "category":  "Bureauc",
                        "allDay":  false
+                   },
+                   {
+                       "title":  "Conseil communautaire",
+                       "start":  "2026-12-17T18:00:00.0000000",
+                       "end":  "2026-12-17T20:00:00.0000000",
+                       "location":  "Maison de la musique",
+                       "category":  "Conseil",
+                       "allDay":  false
                    }
                ],
-    "generatedAt":  "2026-06-17T14:05:15.1887671+02:00"
+    "generatedAt":  "2026-06-25T13:35:44.0478071+02:00"
 }
