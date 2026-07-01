@@ -1,33 +1,9 @@
 {
     "events":  [
                    {
-                       "title":  "Commission assainissement",
-                       "start":  "2026-06-30T18:00:00.0000000",
-                       "end":  "2026-06-30T19:30:00.0000000",
-                       "location":  "Grande salle du siege",
-                       "category":  "Commission",
-                       "allDay":  false
-                   },
-                   {
                        "title":  "Commission amenagement espace",
                        "start":  "2026-07-01T18:00:00.0000000",
                        "end":  "2026-07-01T19:30:00.0000000",
-                       "location":  "Grande salle du siege",
-                       "category":  "Commission",
-                       "allDay":  false
-                   },
-                   {
-                       "title":  "Commission attractivite",
-                       "start":  "2026-07-02T18:00:00.0000000",
-                       "end":  "2026-07-02T19:30:00.0000000",
-                       "location":  "Grande salle du siege",
-                       "category":  "Commission",
-                       "allDay":  false
-                   },
-                   {
-                       "title":  "Commission accompagnement communes",
-                       "start":  "2026-07-03T18:00:00.0000000",
-                       "end":  "2026-07-03T19:30:00.0000000",
                        "location":  "Grande salle du siege",
                        "category":  "Commission",
                        "allDay":  false
@@ -129,5 +105,5 @@
                        "allDay":  false
                    }
                ],
-    "generatedAt":  "2026-06-25T13:35:44.0478071+02:00"
+    "generatedAt":  "2026-07-01T09:46:40.8134825+02:00"
 }
