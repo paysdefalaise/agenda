@@ -1,22 +1,6 @@
 {
     "events":  [
                    {
-                       "title":  "Commission amenagement espace",
-                       "start":  "2026-07-01T18:00:00.0000000",
-                       "end":  "2026-07-01T19:30:00.0000000",
-                       "location":  "Grande salle du siege",
-                       "category":  "Commission",
-                       "allDay":  false
-                   },
-                   {
-                       "title":  "Conseil communautaire",
-                       "start":  "2026-07-09T18:00:00.0000000",
-                       "end":  "2026-07-09T20:00:00.0000000",
-                       "location":  "Maison de la musique",
-                       "category":  "Conseil",
-                       "allDay":  false
-                   },
-                   {
                        "title":  "Commission tourisme patrimoine",
                        "start":  "2026-09-02T18:00:00.0000000",
                        "end":  "2026-09-02T19:30:00.0000000",
@@ -38,6 +22,14 @@
                        "end":  "2026-09-10T19:30:00.0000000",
                        "location":  "Salle polyvalente de Versainville",
                        "category":  "Evenement",
+                       "allDay":  false
+                   },
+                   {
+                       "title":  "Commission developpement economique",
+                       "start":  "2026-09-14T18:00:00.0000000",
+                       "end":  "2026-09-14T19:30:00.0000000",
+                       "location":  "Grande salle du siege",
+                       "category":  "Commission",
                        "allDay":  false
                    },
                    {
@@ -73,6 +65,14 @@
                        "allDay":  false
                    },
                    {
+                       "title":  "Commission environnement",
+                       "start":  "2026-10-20T18:00:00.0000000",
+                       "end":  "2026-10-20T19:30:00.0000000",
+                       "location":  "Grande salle du siege",
+                       "category":  "Commission",
+                       "allDay":  false
+                   },
+                   {
                        "title":  "Bureau communautaire",
                        "start":  "2026-10-29T18:00:00.0000000",
                        "end":  "2026-10-29T20:00:00.0000000",
@@ -105,5 +105,5 @@
                        "allDay":  false
                    }
                ],
-    "generatedAt":  "2026-07-01T09:46:40.8134825+02:00"
+    "generatedAt":  "2026-09-02T09:45:40.5898771+02:00"
 }
