@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
     Commission: "#f44336",
 
-    x: "#00bcd4",
+    CODIR: "#00bcd4",
 
     Bureauc: "#8bc34a",
 
