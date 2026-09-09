@@ -1,22 +1,6 @@
 {
     "events":  [
                    {
-                       "title":  "Commission tourisme patrimoine",
-                       "start":  "2026-09-02T18:00:00.0000000",
-                       "end":  "2026-09-02T19:30:00.0000000",
-                       "location":  "Grande salle du siege",
-                       "category":  "Commission",
-                       "allDay":  false
-                   },
-                   {
-                       "title":  "Commission accompagnement communes",
-                       "start":  "2026-09-03T18:00:00.0000000",
-                       "end":  "2026-09-03T19:30:00.0000000",
-                       "location":  "Grande salle du siege",
-                       "category":  "Commission",
-                       "allDay":  false
-                   },
-                   {
                        "title":  "Conference des Maires",
                        "start":  "2026-09-10T18:00:00.0000000",
                        "end":  "2026-09-10T19:30:00.0000000",
@@ -65,6 +49,14 @@
                        "allDay":  false
                    },
                    {
+                       "title":  "CODIR EPIC",
+                       "start":  "2026-10-13T18:00:00.0000000",
+                       "end":  "2026-10-13T19:30:00.0000000",
+                       "location":  "Salle Pedro Martin",
+                       "category":  "CODIR",
+                       "allDay":  false
+                   },
+                   {
                        "title":  "Commission environnement",
                        "start":  "2026-10-20T18:00:00.0000000",
                        "end":  "2026-10-20T19:30:00.0000000",
@@ -105,5 +97,5 @@
                        "allDay":  false
                    }
                ],
-    "generatedAt":  "2026-09-02T09:45:40.5898771+02:00"
+    "generatedAt":  "2026-09-09T08:31:59.3444473+02:00"
 }
