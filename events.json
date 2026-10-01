@@ -1,46 +1,6 @@
 {
     "events":  [
                    {
-                       "title":  "Conference des Maires",
-                       "start":  "2026-09-10T18:00:00.0000000",
-                       "end":  "2026-09-10T19:30:00.0000000",
-                       "location":  "Salle polyvalente de Versainville",
-                       "category":  "Evenement",
-                       "allDay":  false
-                   },
-                   {
-                       "title":  "Commission developpement economique",
-                       "start":  "2026-09-14T18:00:00.0000000",
-                       "end":  "2026-09-14T19:30:00.0000000",
-                       "location":  "Grande salle du siege",
-                       "category":  "Commission",
-                       "allDay":  false
-                   },
-                   {
-                       "title":  "Commission finances",
-                       "start":  "2026-09-15T18:00:00.0000000",
-                       "end":  "2026-09-15T19:30:00.0000000",
-                       "location":  "Grande salle du siege",
-                       "category":  "Commission",
-                       "allDay":  false
-                   },
-                   {
-                       "title":  "Bureau communautaire",
-                       "start":  "2026-09-17T18:00:00.0000000",
-                       "end":  "2026-09-17T20:00:00.0000000",
-                       "location":  "Grande salle du siege",
-                       "category":  "Bureauc",
-                       "allDay":  false
-                   },
-                   {
-                       "title":  "Commission culture",
-                       "start":  "2026-09-22T17:45:00.0000000",
-                       "end":  "2026-09-22T19:45:00.0000000",
-                       "location":  "Grande salle du siege",
-                       "category":  "Commission",
-                       "allDay":  false
-                   },
-                   {
                        "title":  "Conseil communautaire",
                        "start":  "2026-10-01T18:00:00.0000000",
                        "end":  "2026-10-01T20:00:00.0000000",
@@ -57,11 +17,11 @@
                        "allDay":  false
                    },
                    {
-                       "title":  "Commission environnement",
-                       "start":  "2026-10-20T18:00:00.0000000",
-                       "end":  "2026-10-20T19:30:00.0000000",
+                       "title":  "Bureau executif",
+                       "start":  "2026-10-14T09:00:00.0000000",
+                       "end":  "2026-10-14T10:30:00.0000000",
                        "location":  "Grande salle du siege",
-                       "category":  "Commission",
+                       "category":  "Bureau",
                        "allDay":  false
                    },
                    {
@@ -81,6 +41,14 @@
                        "allDay":  false
                    },
                    {
+                       "title":  "Commission environnement",
+                       "start":  "2026-11-19T18:00:00.0000000",
+                       "end":  "2026-11-19T19:30:00.0000000",
+                       "location":  "Grande salle du siege",
+                       "category":  "Commission",
+                       "allDay":  false
+                   },
+                   {
                        "title":  "Bureau communautaire",
                        "start":  "2026-12-03T18:00:00.0000000",
                        "end":  "2026-12-03T20:00:00.0000000",
@@ -97,5 +65,5 @@
                        "allDay":  false
                    }
                ],
-    "generatedAt":  "2026-09-09T08:31:59.3444473+02:00"
+    "generatedAt":  "2026-10-01T13:34:06.9540692+02:00"
 }
