@@ -1,30 +1,6 @@
 {
     "events":  [
                    {
-                       "title":  "Conseil communautaire",
-                       "start":  "2026-10-01T18:00:00.0000000",
-                       "end":  "2026-10-01T20:00:00.0000000",
-                       "location":  "Maison de la musique",
-                       "category":  "Conseil",
-                       "allDay":  false
-                   },
-                   {
-                       "title":  "CODIR EPIC",
-                       "start":  "2026-10-13T18:00:00.0000000",
-                       "end":  "2026-10-13T19:30:00.0000000",
-                       "location":  "Salle Pedro Martin",
-                       "category":  "CODIR",
-                       "allDay":  false
-                   },
-                   {
-                       "title":  "Bureau executif",
-                       "start":  "2026-10-14T09:00:00.0000000",
-                       "end":  "2026-10-14T10:30:00.0000000",
-                       "location":  "Grande salle du siege",
-                       "category":  "Bureau",
-                       "allDay":  false
-                   },
-                   {
                        "title":  "Bureau communautaire",
                        "start":  "2026-10-29T18:00:00.0000000",
                        "end":  "2026-10-29T20:00:00.0000000",
@@ -33,11 +9,35 @@
                        "allDay":  false
                    },
                    {
+                       "title":  "Conference des Maires",
+                       "start":  "2026-11-05T18:00:00.0000000",
+                       "end":  "2026-11-05T20:00:00.0000000",
+                       "location":  "Mairie de Versainville",
+                       "category":  "Evenement",
+                       "allDay":  false
+                   },
+                   {
+                       "title":  "Bureau executif",
+                       "start":  "2026-11-11T09:00:00.0000000",
+                       "end":  "2026-11-11T10:30:00.0000000",
+                       "location":  "Grande salle du siege",
+                       "category":  "Bureau",
+                       "allDay":  false
+                   },
+                   {
                        "title":  "Conseil communautaire",
                        "start":  "2026-11-12T18:00:00.0000000",
                        "end":  "2026-11-12T20:00:00.0000000",
                        "location":  "Maison de la musique",
                        "category":  "Conseil",
+                       "allDay":  false
+                   },
+                   {
+                       "title":  "Commission finances",
+                       "start":  "2026-11-17T18:00:00.0000000",
+                       "end":  "2026-11-17T19:30:00.0000000",
+                       "location":  "Grande salle du siege",
+                       "category":  "Commission",
                        "allDay":  false
                    },
                    {
@@ -63,7 +63,55 @@
                        "location":  "Maison de la musique",
                        "category":  "Conseil",
                        "allDay":  false
+                   },
+                   {
+                       "title":  "Commission finances",
+                       "start":  "2027-01-26T18:00:00.0000000",
+                       "end":  "2027-01-26T19:30:00.0000000",
+                       "location":  "Grande salle du siege",
+                       "category":  "Commission",
+                       "allDay":  false
+                   },
+                   {
+                       "title":  "Bureau communautaire",
+                       "start":  "2027-02-04T18:00:00.0000000",
+                       "end":  "2027-02-04T20:00:00.0000000",
+                       "location":  "Grande salle du siege",
+                       "category":  "Bureauc",
+                       "allDay":  false
+                   },
+                   {
+                       "title":  "Conseil communautaire",
+                       "start":  "2027-02-18T18:00:00.0000000",
+                       "end":  "2027-02-18T20:00:00.0000000",
+                       "location":  "Maison de la musique",
+                       "category":  "Conseil",
+                       "allDay":  false
+                   },
+                   {
+                       "title":  "Commission finances",
+                       "start":  "2027-03-09T18:00:00.0000000",
+                       "end":  "2027-03-09T19:30:00.0000000",
+                       "location":  "Grande salle du siege",
+                       "category":  "Commission",
+                       "allDay":  false
+                   },
+                   {
+                       "title":  "Bureau communautaire",
+                       "start":  "2027-03-11T18:00:00.0000000",
+                       "end":  "2027-03-11T20:00:00.0000000",
+                       "location":  "Grande salle du siege",
+                       "category":  "Bureauc",
+                       "allDay":  false
+                   },
+                   {
+                       "title":  "Conseil communautaire",
+                       "start":  "2027-03-25T18:00:00.0000000",
+                       "end":  "2027-03-25T20:00:00.0000000",
+                       "location":  "Maison de la musique",
+                       "category":  "Conseil",
+                       "allDay":  false
                    }
                ],
-    "generatedAt":  "2026-10-01T13:34:06.9540692+02:00"
+    "generatedAt":  "2026-10-29T08:27:58.0544950+01:00"
 }
